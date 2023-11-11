@@ -4,8 +4,8 @@
 </script>
 
 <!-- hero and nav section -->
-<section class="flex">
-	<div class="px-16 py-5">
+<section class="flex max-h-screen h-screen">
+	<div class="px-28 py-5">
 		<nav class="flex justify-between py-5">
 			<ul class="text-primary-text">
 				<li>
@@ -41,9 +41,11 @@
 			</ul>
 		</nav>
 		<!-- hero section -->
-		<div class="">
-			<h1 class="text-5xl font-bold text-primary-text font-playfair">Embrace Timeless Beauty</h1>
-			<p class="text-primary-text/50 font-lato">
+		<div class="py-3 mt-6">
+			<h1 class="text-7xl font-bold text-primary-text font-playfair">
+				Embrace Timeless <br /> Beauty
+			</h1>
+			<p class="text-primary-text/50 font-lato mt-4 py-5 mb-6">
 				Indulge in the delicate balance of science and nature, elevating your daily ritual to an
 				enriching experience of nourishment and renewal.
 			</p>
@@ -52,7 +54,7 @@
 			>
 				Shop Now
 			</button>
-			<ul class="flex gap-4">
+			<ul class="flex gap-6 mt-3 py-6">
 				<li>
 					<div>
 						<h2 class="font-bold font-lato text-primary-text text-2xl">700+</h2>
@@ -74,13 +76,12 @@
 			</ul>
 		</div>
 	</div>
-	<picture class="max-h-screen">
-		<img src="/hero-pic1.png" class="w-full relative" alt="hero" />
-		<img
-			src="/hero-pic2.png"
-			class="absolute -bottom-1/4 left-1/2 hidden md:block"
-			alt="hero-2"
-			srcset=""
-		/>
+	<picture>
+		<div class="relative w-full h-full">
+			<img src="/hero-pic1.png" class="md:w-[35vw] block md:h-screen" alt="hero" />
+			<div class="absolute bottom-0 w-64 -left-1/4">
+				<img src="/hero-pic2.png" class="hidden md:block" alt="hero-2" srcset="" />
+			</div>
+		</div>
 	</picture>
 </section>
