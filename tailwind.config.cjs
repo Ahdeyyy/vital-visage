@@ -12,6 +12,7 @@ const config = {
 			},
 			colors: {
 				'primary-text': '#2E0600',
+				'background': '#DED1C1',
 			},
 
 		}

@@ -1,18 +1,33 @@
 <script lang="ts">
 	// import shoppingBagIcon from '/icons/shopping-bag-01.svg';
 	// import UserIcon from '/icons/user.svg';
+	let open_menu = false;
+
+	function toggleMenu() {
+		open_menu = !open_menu;
+	}
 </script>
 
 <!-- hero and nav section -->
-<section class="flex max-h-screen h-screen">
-	<div class="px-28 py-5">
-		<nav class="flex justify-between py-5">
-			<ul class="text-primary-text">
+<section class="md:flex grid max-h-screen md:h-screen">
+	<div class="md:px-28 px-6 py-5 md:h-full h-screen">
+		<nav class=" flex justify-between items-center py-5 max-h-screen">
+			<ul class="text-primary-text flex justify-between z-50 w-full md:w-fit md:block">
 				<li>
 					<a href="/" class="font-playfair font-bold text-lg">VitalVisage</a>
 				</li>
+				<button class="md:hidden" class:hidden={open_menu} on:click={toggleMenu}>
+					<img src="/icons/hamburger.svg" class="w-8 h-8" alt="hamburger-icon" />
+				</button>
+				<button class="md:hidden" class:hidden={!open_menu} on:click={toggleMenu}>
+					<img src="/icons/x.svg" class="w-8 h-8" alt="close-icon" />
+				</button>
 			</ul>
-			<ul class="flex gap-8 text-primary-text/50">
+
+			<ul
+				class="flex flex-col z-10 gap-3 md:h-fit h-screen md:gap-8 text-primary-text/50 md:flex md:flex-row md:static absolute top-0 left-0 bottom-0 right-0 py-28 px-6 md:p-0 bg-background"
+				class:hidden={!open_menu}
+			>
 				<li>
 					<a href="/">Home</a>
 				</li>
@@ -27,7 +42,7 @@
 				</li>
 			</ul>
 
-			<ul class="flex gap-6">
+			<ul class="md:flex hidden gap-6">
 				<li>
 					<a href="/">
 						<img src="/icons/shopping-bag-01.svg" alt="shopping bag icon" />
@@ -40,9 +55,10 @@
 				</li>
 			</ul>
 		</nav>
+
 		<!-- hero section -->
 		<div class="py-3 mt-6">
-			<h1 class="text-7xl font-bold text-primary-text font-playfair">
+			<h1 class="text-4xl md:text-7xl font-bold text-primary-text font-playfair">
 				Embrace Timeless <br /> Beauty
 			</h1>
 			<p class="text-primary-text/50 font-lato mt-4 py-5 mb-6">
@@ -54,7 +70,7 @@
 			>
 				Shop Now
 			</button>
-			<ul class="flex gap-6 mt-3 py-6">
+			<ul class="flex gap-6 mt-3 py-8">
 				<li>
 					<div>
 						<h2 class="font-bold font-lato text-primary-text text-2xl">700+</h2>
@@ -76,12 +92,14 @@
 			</ul>
 		</div>
 	</div>
-	<picture>
-		<div class="relative w-full h-full">
-			<img src="/hero-pic1.png" class="md:w-[35vw] block md:h-screen" alt="hero" />
-			<div class="absolute bottom-0 w-64 -left-1/4">
-				<img src="/hero-pic2.png" class="hidden md:block" alt="hero-2" srcset="" />
+	{#if !open_menu}
+		<picture>
+			<div class="relative">
+				<img src="/hero-pic1.png" class="md:w-[35vw] w-full h-1/2 block md:h-screen" alt="hero" />
+				<div class="absolute bottom-0 w-64 md:-left-1/4">
+					<img src="/hero-pic2.png" class="block" alt="hero-2" srcset="" />
+				</div>
 			</div>
-		</div>
-	</picture>
+		</picture>
+	{/if}
 </section>
