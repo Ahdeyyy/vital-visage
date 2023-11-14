@@ -15,7 +15,7 @@
 		let featUlWidth = featUl?.offsetWidth;
 
 		setInterval(() => {
-			featUl.scrollLeft += 3;
+			featUl.scrollLeft += 1;
 			// make the featUl wrap around when it reaches the end
 			if (featUl.scrollLeft >= featUlWidth) {
 				featUl.scrollLeft = 0;
@@ -120,7 +120,7 @@
 	{/if}
 </section>
 {#if !open_menu}
-	<section class="py-4 mt-8 mb-8">
+	<section class="py-4 mt-9 mb-8">
 		<ul id="feat-ul" class="flex gap-6 md:gap-8 overflow-x-hidden overflow-y-hidden">
 			<li class="flex gap-4">
 				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
@@ -155,5 +155,14 @@
 				</p>
 			</li>
 		</ul>
+	</section>
+
+	<section class="px-6 md:px-28 py-2 mt-12">
+		<h2 class="font-playfair capitalize text-2xl md:text-5xl text-primary-text font-bold">
+			Shop by collection
+		</h2>
+		<p class="font-lato md:text-lg mt-1 text-sm text-primary-text/50">
+			Explore our curated selection of skincare essentials
+		</p>
 	</section>
 {/if}
