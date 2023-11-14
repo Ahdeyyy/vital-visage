@@ -9,7 +9,7 @@
 </script>
 
 <!-- hero and nav section -->
-<section class="md:flex grid max-h-screen md:h-screen">
+<section class="md:flex grid md:h-screen">
 	<div class="md:px-28 px-6 py-5 md:h-full h-screen">
 		<nav class=" flex justify-between items-center py-5 max-h-screen">
 			<ul class="text-primary-text flex justify-between z-50 w-full md:w-fit md:block">
@@ -103,3 +103,41 @@
 		</picture>
 	{/if}
 </section>
+{#if !open_menu}
+	<section class="p-4 mt-8 overflow-x-auto mb-8">
+		<ul class="flex gap-6">
+			<li class="flex gap-4">
+				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<p
+					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+				>
+					hydration & motion
+				</p>
+			</li>
+			<li class="flex gap-4">
+				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<p
+					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+				>
+					natural ingredients
+				</p>
+			</li>
+			<li class="flex gap-4">
+				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<p
+					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+				>
+					oil control
+				</p>
+			</li>
+			<li class="flex gap-4">
+				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<p
+					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+				>
+					uv protection
+				</p>
+			</li>
+		</ul>
+	</section>
+{/if}
