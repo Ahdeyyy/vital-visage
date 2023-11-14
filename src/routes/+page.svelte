@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	// import shoppingBagIcon from '/icons/shopping-bag-01.svg';
 	// import UserIcon from '/icons/user.svg';
 	let open_menu = false;
@@ -6,6 +8,20 @@
 	function toggleMenu() {
 		open_menu = !open_menu;
 	}
+	onMount(() => {
+		let featUl = document.querySelector('#feat-ul') as HTMLUListElement;
+		let featLi = document.querySelectorAll('#feat-ul li') as NodeListOf<HTMLLIElement>;
+
+		let featUlWidth = featUl?.offsetWidth;
+
+		setInterval(() => {
+			featUl.scrollLeft += 3;
+			// make the featUl wrap around when it reaches the end
+			if (featUl.scrollLeft >= featUlWidth) {
+				featUl.scrollLeft = 0;
+			}
+		}, 20);
+	});
 </script>
 
 <!-- hero and nav section -->
@@ -104,12 +120,12 @@
 	{/if}
 </section>
 {#if !open_menu}
-	<section class="p-4 mt-8 overflow-x-auto mb-8">
-		<ul class="flex gap-6">
+	<section class="py-4 mt-8 mb-8">
+		<ul id="feat-ul" class="flex gap-6 md:gap-8 overflow-x-hidden overflow-y-hidden">
 			<li class="flex gap-4">
 				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
-					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
 					hydration & motion
 				</p>
@@ -117,7 +133,7 @@
 			<li class="flex gap-4">
 				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
-					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
 					natural ingredients
 				</p>
@@ -125,7 +141,7 @@
 			<li class="flex gap-4">
 				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
-					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
 					oil control
 				</p>
@@ -133,7 +149,7 @@
 			<li class="flex gap-4">
 				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
-					class="font-outline text-transparent text-xl md:text-2xl font-playfair font-bold uppercase whitespace-nowrap"
+					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
 					uv protection
 				</p>
