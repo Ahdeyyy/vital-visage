@@ -192,7 +192,7 @@
 				<img loading="lazy" src="/citrus-facial.png" alt="citrus-facial" />
 				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
 					<div>
-						<p class="capitalize">citrus face cleaner</p>
+						<p class="capitalize text-sm md:text-base">citrus face cleaner</p>
 						<p class="font-bold text-lg">$50</p>
 					</div>
 					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
@@ -202,7 +202,7 @@
 				<img loading="lazy" src="/brightening-vitamin.png" alt="brightening vitamin cream" />
 				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
 					<div>
-						<p class="capitalize">brightening vitamin cream</p>
+						<p class="capitalize text-sm md:text-base">brightening vitamin cream</p>
 						<p class="font-bold text-lg">$30</p>
 					</div>
 					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
@@ -212,7 +212,7 @@
 				<img loading="lazy" src="/nourishing-shea.png" alt="nourishing shea butter" />
 				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
 					<div>
-						<p class="capitalize">nourishing shea butter</p>
+						<p class="capitalize text-sm md:text-base">nourishing shea butter</p>
 						<p class="font-bold text-lg">$100</p>
 					</div>
 					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
@@ -222,7 +222,7 @@
 				<img loading="lazy" src="/bamboo-scrub.png" alt="bamboo scrub" />
 				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
 					<div>
-						<p class="capitalize">bamboo scrub</p>
+						<p class="capitalize text-sm md:text-base">bamboo scrub</p>
 						<p class="font-bold text-lg">$80</p>
 					</div>
 					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
@@ -232,7 +232,7 @@
 				<img loading="lazy" src="/intensive-repair.png" alt="intensive repair night cream" />
 				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
 					<div>
-						<p class="capitalize">intensive repair night cream</p>
+						<p class="capitalize text-sm md:text-base">intensive repair nightcream</p>
 						<p class="font-bold text-lg">$40</p>
 					</div>
 					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
@@ -242,7 +242,7 @@
 				<img loading="lazy" src="/citrus-facial-cleanser.png" alt="citrus facial cleanser" />
 				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
 					<div>
-						<p class="capitalize">citrus face cleanser</p>
+						<p class="capitalize text-sm md:text-base">citrus face cleanser</p>
 						<p class="font-bold text-lg">$60</p>
 					</div>
 					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
