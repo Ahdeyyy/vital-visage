@@ -157,12 +157,23 @@
 		</ul>
 	</section>
 
-	<section class="px-6 md:px-28 py-2 mt-12">
+	<section class="px-6 md:px-28 py-2 mt-12 md:mt-20 mb-12 md:mb-16">
 		<h2 class="font-playfair capitalize text-2xl md:text-5xl text-primary-text font-bold">
 			Shop by collection
 		</h2>
-		<p class="font-lato md:text-lg mt-1 text-sm text-primary-text/50">
+		<p class="font-lato md:text-lg mt-4 md:mt-6 mb-3 md:mb-7 text-sm text-primary-text/50">
 			Explore our curated selection of skincare essentials
 		</p>
+		<ul class="mt-5 md:mt-12 flex-col md:flex-row flex gap-4">
+			<li>
+				<img src="/pure-bliss.jpg" alt="bliss" />
+			</li>
+			<ul class="flex-col flex justify-between gap-4 md:gap-0">
+				<li><img src="/velvet-veil.png" alt="velvet" /></li>
+				<li>
+					<img src="/silk-serenity.png" alt="serenity" />
+				</li>
+			</ul>
+		</ul>
 	</section>
 {/if}
