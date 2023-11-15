@@ -10,15 +10,26 @@
 	}
 	onMount(() => {
 		let featUl = document.querySelector('#feat-ul') as HTMLUListElement;
-		let featLi = document.querySelectorAll('#feat-ul li') as NodeListOf<HTMLLIElement>;
+		let imgScroll = document.querySelector('#img-scroll') as HTMLDivElement;
 
-		let featUlWidth = featUl?.offsetWidth;
+		let featUlWidth = 570;
+		let imgScrollWidth = 1127;
+
+		// console.log(featUlWidth, imgScrollWidth);
 
 		setInterval(() => {
+			let oldScrollLeft = featUl.scrollLeft;
+			let oldImgScrollLeft = imgScroll.scrollLeft;
 			featUl.scrollLeft += 1;
+			imgScroll.scrollLeft += 1;
 			// make the featUl wrap around when it reaches the end
-			if (featUl.scrollLeft >= featUlWidth) {
+			if (oldScrollLeft === featUl.scrollLeft) {
 				featUl.scrollLeft = 0;
+			}
+
+			// make the imgScroll wrap around when it reaches the end
+			if (oldImgScrollLeft === imgScroll.scrollLeft) {
+				imgScroll.scrollLeft = 0;
 			}
 		}, 20);
 	});
@@ -253,7 +264,7 @@
 
 	<section class="px-6 md:px-28 mt-8 mb-6 md:mt-24">
 		<h2
-			class="mb-6 md:mb-20 capitalize font-playfair font-bold text-3xl md:text-5xl text-primary-text"
+			class="mb-6 md:mb-20 capitalize font-playfair font-bold text-2xl md:text-5xl text-primary-text"
 		>
 			about VitalVisage
 		</h2>
@@ -275,6 +286,73 @@
 				class="md:col-span-3 justify-self-center w-fit md:-translate-y-12"
 				src="/about-3.png"
 				alt="about-1"
+			/>
+		</div>
+	</section>
+	<section class="mt-14 md:mt-16 mb-8">
+		<div class="px-6 md:px-26">
+			<h2 class="font-playfair text-2xl md:text-5xl text-primary-text font-bold">
+				Follow Us On Instagram
+			</h2>
+			<p class="font-lato text-primary-text/50 mt-3 md:mt-6">
+				Join the journey on instagram for exclusive behind-the-scenes insights and beauty
+				inspirations.
+			</p>
+		</div>
+		<div id="img-scroll" class="flex overflow-x-hidden justify-center grow-0 py-3 mt-4 md:mt-8">
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-1.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-2.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-3.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-4.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-5.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-6.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-7.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-8.png"
+				alt="follow us"
+			/>
+			<img
+				class="block w-full h-fit self-center"
+				loading="lazy"
+				src="/followus-9.png"
+				alt="follow us"
 			/>
 		</div>
 	</section>
