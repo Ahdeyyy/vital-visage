@@ -181,7 +181,7 @@
 			</ul>
 		</ul>
 	</section>
-	<section class="mt-4 md:mt-32 px-6 md:px-28">
+	<section class="mt-4 mb-4 md:mb-6 md:mt-32 px-6 md:px-28">
 		<h2
 			class="mb-7 md:mb-12 font-playfair font-bold text-3xl md:text-5xl text-primary-text capitalize"
 		>
@@ -249,5 +249,33 @@
 				</div>
 			</li>
 		</ul>
+	</section>
+
+	<section class="px-6 md:px-28 mt-8 mb-6 md:mt-24">
+		<h2
+			class="mb-6 md:mb-20 capitalize font-playfair font-bold text-3xl md:text-5xl text-primary-text"
+		>
+			about VitalVisage
+		</h2>
+		<div class="grid grid-cols-1 gap-3 md:gap-9 md:grid-cols-3">
+			<img src="/about-1.png" alt="about-1" />
+
+			<p class="font-lato text-primary-text text-sm -pb-7 pt-7">
+				We believe in the transformative power of cosmetics and skincare, empowering individuals to
+				express their unique beauty confidently. With a passion for quality and creativity, we
+				strive to create products that not only enhance outer beauty but also foster a sense of
+				self-expression and inner confidence. <br /> <br /> Our journey began with a simple vision to
+				redefine beauty industry through a combination of cutting-edge research, premium ingredients
+				and a commitment to sustainability, Every product in our collection is carefully crafted to deliver
+				exceptional results.
+			</p>
+
+			<img class="hidden md:block" src="/about-2.png" alt="about-1" />
+			<img
+				class="md:col-span-3 justify-self-center w-fit md:-translate-y-12"
+				src="/about-3.png"
+				alt="about-1"
+			/>
+		</div>
 	</section>
 {/if}
