@@ -111,9 +111,14 @@
 	{#if !open_menu}
 		<picture>
 			<div class="relative">
-				<img src="/hero-pic1.png" class="md:w-[35vw] w-full h-1/2 block md:h-screen" alt="hero" />
+				<img
+					loading="lazy"
+					src="/hero-pic1.png"
+					class="md:w-[35vw] w-full h-1/2 block md:h-screen"
+					alt="hero"
+				/>
 				<div class="absolute bottom-0 w-64 md:-left-1/4">
-					<img src="/hero-pic2.png" class="block" alt="hero-2" srcset="" />
+					<img loading="lazy" src="/hero-pic2.png" class="block" alt="hero-2" srcset="" />
 				</div>
 			</div>
 		</picture>
@@ -123,7 +128,7 @@
 	<section class="py-4 mt-9 mb-8">
 		<ul id="feat-ul" class="flex gap-6 md:gap-8 overflow-x-hidden overflow-y-hidden">
 			<li class="flex gap-4">
-				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<img loading="lazy" src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
 					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
@@ -131,7 +136,7 @@
 				</p>
 			</li>
 			<li class="flex gap-4">
-				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<img loading="lazy" src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
 					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
@@ -139,7 +144,7 @@
 				</p>
 			</li>
 			<li class="flex gap-4">
-				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<img loading="lazy" src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
 					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
@@ -147,7 +152,7 @@
 				</p>
 			</li>
 			<li class="flex gap-4">
-				<img src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
+				<img loading="lazy" src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
 				<p
 					class="font-outline text-transparent text-xl md:text-3xl font-playfair font-bold uppercase whitespace-nowrap"
 				>
@@ -166,14 +171,83 @@
 		</p>
 		<ul class="mt-5 md:mt-12 flex-col md:flex-row flex gap-4">
 			<li>
-				<img src="/pure-bliss.jpg" alt="bliss" />
+				<img loading="lazy" src="/pure-bliss.jpg" alt="bliss" />
 			</li>
 			<ul class="flex-col flex justify-between gap-4 md:gap-0">
-				<li><img src="/velvet-veil.png" alt="velvet" /></li>
+				<li><img loading="lazy" src="/velvet-veil.png" alt="velvet" /></li>
 				<li>
-					<img src="/silk-serenity.png" alt="serenity" />
+					<img loading="lazy" src="/silk-serenity.png" alt="serenity" />
 				</li>
 			</ul>
+		</ul>
+	</section>
+	<section class="mt-4 md:mt-32 px-6 md:px-28">
+		<h2
+			class="mb-7 md:mb-12 font-playfair font-bold text-3xl md:text-5xl text-primary-text capitalize"
+		>
+			Latest product
+		</h2>
+		<ul class="grid md:grid-cols-3 grid-cols-1 gap-6">
+			<li class="w-fit">
+				<img loading="lazy" src="/citrus-facial.png" alt="citrus-facial" />
+				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
+					<div>
+						<p class="capitalize">citrus face cleaner</p>
+						<p class="font-bold text-lg">$50</p>
+					</div>
+					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
+				</div>
+			</li>
+			<li class="w-fit">
+				<img loading="lazy" src="/brightening-vitamin.png" alt="brightening vitamin cream" />
+				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
+					<div>
+						<p class="capitalize">brightening vitamin cream</p>
+						<p class="font-bold text-lg">$30</p>
+					</div>
+					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
+				</div>
+			</li>
+			<li class="w-fit">
+				<img loading="lazy" src="/nourishing-shea.png" alt="nourishing shea butter" />
+				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
+					<div>
+						<p class="capitalize">nourishing shea butter</p>
+						<p class="font-bold text-lg">$100</p>
+					</div>
+					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
+				</div>
+			</li>
+			<li class="w-fit">
+				<img loading="lazy" src="/bamboo-scrub.png" alt="bamboo scrub" />
+				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
+					<div>
+						<p class="capitalize">bamboo scrub</p>
+						<p class="font-bold text-lg">$80</p>
+					</div>
+					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
+				</div>
+			</li>
+			<li class="w-fit">
+				<img loading="lazy" src="/intensive-repair.png" alt="intensive repair night cream" />
+				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
+					<div>
+						<p class="capitalize">intensive repair night cream</p>
+						<p class="font-bold text-lg">$40</p>
+					</div>
+					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
+				</div>
+			</li>
+			<li class="w-fit">
+				<img loading="lazy" src="/citrus-facial-cleanser.png" alt="citrus facial cleanser" />
+				<div class="flex justify-between font-lato font-medium text-primary-text mt-4">
+					<div>
+						<p class="capitalize">citrus face cleanser</p>
+						<p class="font-bold text-lg">$60</p>
+					</div>
+					<button class="px-4 py-1 border border-primary-text self-start">Add to cart</button>
+				</div>
+			</li>
 		</ul>
 	</section>
 {/if}
