@@ -136,7 +136,8 @@
 	{/if}
 </section>
 {#if !open_menu}
-	<section class="py-4 mt-9 mb-8">
+	<hr class="bg-primary-text/40 mt-28 h-0.5" />
+	<section class="py-4">
 		<ul id="feat-ul" class="flex gap-6 md:gap-8 overflow-x-hidden overflow-y-hidden">
 			<li class="flex gap-4">
 				<img loading="lazy" src="/icons/star.svg" class="fill-primary-text" alt="star icon" />
@@ -172,6 +173,7 @@
 			</li>
 		</ul>
 	</section>
+	<hr class="bg-primary-text/40 mb-10 h-0.5" />
 
 	<section class="px-6 md:px-28 py-2 mt-12 md:mt-20 mb-12 md:mb-16">
 		<h2 class="font-playfair capitalize text-2xl md:text-5xl text-primary-text font-bold">
@@ -268,7 +270,7 @@
 		>
 			about VitalVisage
 		</h2>
-		<div class="grid grid-cols-1 gap-3 md:gap-9 md:grid-cols-3">
+		<div class="grid grid-cols-1 gap-5 md:gap-9 md:grid-cols-3">
 			<img src="/about-1.png" alt="about-1" />
 
 			<p class="font-lato text-primary-text text-sm -pb-7 pt-7">
@@ -356,4 +358,59 @@
 			/>
 		</div>
 	</section>
+
+	<hr class="bg-primary-text/40 h-0.5" />
+	<section
+		class="px-6 md:px-28 mt-16 md:mt-28 mb-12 md:grid md:grid-flow-col md:grid-cols-12 gap-6"
+	>
+		<div class="mb-5 col-span-8">
+			<h2 class="font-bold font-playfair text-3xl md:text-5xl text-primary-text mb-8 md:mb-12">
+				VitalVisage
+			</h2>
+			<h3 class="capitalize font-lato font-semibold text-primary-text/80 text-lg md:text-xl mb-3">
+				subscribe to our newsletter
+			</h3>
+			<form class="flex gap-0 md:gap-3" action="">
+				<input
+					class="bg-transparent border outline-none focus:shadow-xl focus:drop-shadow-xl border-primary-text placeholder:text-primary-text/50 px-3 py-2"
+					type="email"
+					name="email"
+					placeholder="Email"
+					id=""
+				/>
+				<button class="bg-primary-text text-white text-lato px-5 py-2" type="button"
+					>Subscribe</button
+				>
+			</form>
+		</div>
+		<div class="mb-5 col-span-2">
+			<h3 class="capitalize font-lato font-semibold text-primary-text/80 text-lg md:text-xl mb-2">
+				Customer Service
+			</h3>
+			<ul class="text-primary-text/50 font-lato capitalize">
+				<li>shopping</li>
+				<li>refund policy</li>
+				<li>terms & conditions</li>
+				<li>contact us</li>
+				<li>FAQs</li>
+			</ul>
+		</div>
+
+		<div class="mb-6 col-span-2">
+			<h3 class="capitalize font-lato font-semibold text-primary-text/80 text-lg md:text-xl mb-2">
+				socials
+			</h3>
+			<ul class="text-primary-text/50 font-lato capitalize">
+				<li>facebook</li>
+				<li>twitter</li>
+				<li>instagram</li>
+				<li>youtube</li>
+			</ul>
+		</div>
+	</section>
+	<div class="px-6 md:px-28 md:text-center mb-12">
+		<p class="text-primary-text/50 font-lato capitalize text-sm">
+			Copyright © 2023 Cosmetics . All Rights Reserved.
+		</p>
+	</div>
 {/if}
