@@ -88,7 +88,7 @@
 			<h1 class="text-4xl md:text-7xl font-bold text-primary-text font-playfair">
 				Embrace Timeless <br /> Beauty
 			</h1>
-			<p class="text-primary-text/50 font-lato mt-4 py-5 mb-6">
+			<p class="text-primary-text/50 font-lato mt-2 md:mt-4 py-5 mb-6">
 				Indulge in the delicate balance of science and nature, elevating your daily ritual to an
 				enriching experience of nourishment and renewal.
 			</p>
@@ -97,7 +97,7 @@
 			>
 				Shop Now
 			</button>
-			<ul class="flex gap-6 mt-3 py-8">
+			<ul class="flex gap-6 mt-2 md:mt-4 py-8">
 				<li>
 					<div>
 						<h2 class="font-bold font-lato text-primary-text text-2xl">700+</h2>
@@ -301,7 +301,7 @@
 				inspirations.
 			</p>
 		</div>
-		<div id="img-scroll" class="flex overflow-x-hidden justify-center grow-0 py-3 mt-4 md:mt-8">
+		<div id="img-scroll" class="flex overflow-x-hidden py-3 mt-4 md:mt-8">
 			<img
 				class="block w-full h-fit self-center"
 				loading="lazy"
@@ -372,13 +372,13 @@
 			</h3>
 			<form class="flex gap-0 md:gap-3" action="">
 				<input
-					class="bg-transparent border outline-none focus:shadow-xl focus:drop-shadow-xl border-primary-text placeholder:text-primary-text/50 px-3 py-2"
+					class="bg-transparent border outline-none focus:shadow-xl focus:drop-shadow-xl border-primary-text placeholder:text-primary-text/50 px-2 py-2 md:px-3 md:py-2"
 					type="email"
 					name="email"
 					placeholder="Email"
 					id=""
 				/>
-				<button class="bg-primary-text text-white text-lato px-5 py-2" type="button"
+				<button class="bg-primary-text text-white text-lato px-2 py-2 md:px-3 md:py-2" type="button"
 					>Subscribe</button
 				>
 			</form>
